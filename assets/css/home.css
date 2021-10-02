@@ -59,10 +59,13 @@ body{
     right: 0;
     z-index: 999;
     font-family: "Font-menu";
+
+    /* max-height: 100px; */
 }
 
 #logo{
     flex: 15%;
+    text-align: center;
 }
 #navbar{
     flex: 40%;
@@ -84,7 +87,8 @@ body{
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 15px;
+    padding: 0 15px;
+    line-height: 53px;
 }
 #navbar a:hover{
     background-color: #fff;
@@ -209,7 +213,8 @@ body{
 }
 .item-time:hover{
     position: relative;
-    top: -2px;
+    top: -5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 /* End open time */
 

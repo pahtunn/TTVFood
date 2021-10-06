@@ -47,6 +47,9 @@ body{
   opacity: 0.5;
   z-index: 2;
 }
+input:focus{
+  border: 2px solid #ECE7B4;
+}
 .section{
     margin: 3rem 0;
 }
@@ -73,14 +76,12 @@ body{
     background-color: var(--primary-color);
     color: #fff;
     align-items: center;
-    /* padding: 0px 5px; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
     font-family: "Font-menu";
-    /* max-height: 100px; */
 }
 
 #logo{
@@ -113,8 +114,8 @@ body{
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 0 15px;
-    /* line-height: 53px; */
+    padding: 17px 15px;
+    
 }
 #navbar a:hover{
     background-color: #fff;
@@ -128,6 +129,7 @@ body{
     box-shadow: 0 0 10px rgb(0,0,0,0.3);
     background-color: #fff;
     z-index: 999;
+    border-radius: 0 0 1rem 1rem;
 }
 #navbar .subnav li{
     display: block;
@@ -146,6 +148,9 @@ body{
     background-color: var(--primary-color);
     color: #fff;
 }
+.subnav li:last-child a{
+  border-radius: 0 0 1rem 1rem;
+}
 #search-box form span{
     display: inline-block;
     padding: 4px 6px;
@@ -153,14 +158,19 @@ body{
 }
 #search-box form input{
     width: 80%;
-    padding: 5px 0;
+    padding: 7px 0;
     outline: none;
 }
+
 
 #user-account > button{
   background: none;
   border: none;
   color: #fff;
+}
+#user-account > button:hover{
+  text-decoration: underline;
+  color: #ECE7B4;
 }
 #user-account button:first-child{
   margin-right: 10px;

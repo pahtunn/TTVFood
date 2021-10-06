@@ -19,53 +19,90 @@
     <div class="wrapper">
         <!-- Start Header  -->
         <!-- Start Header  -->
-        <div class="header flex-container">
-            <div id="logo"><img src="assets/imgs/main-logo.png" width="80px" alt="TTVFood logo"></div>
-            <div id="navbar">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Trang chủ</a>
-                    </li>
-                    <li class="nav-item" style="position: relative;">
-                        <a href="" class="nav-link">Thể loại <i class="fas fa-angle-down"></i></a>
-                        <ul class="subnav">
-                            <li>
-                                <a href="">Eat clean</a>
-                            </li>
-                            <li>
-                                <a href="">Eat heathy</a>
-                            </li>
-                            <li>
-                                <a href="">Đồ ăn nhanh</a>
-                            </li>
-                            <li>
-                                <a href="">Đồ ăn Cao cấp</a>
-                            </li>
-                            <li>
-                                <a href="">Đồ ăn Bình dân</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Người sáng lập</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Bản đồ</a>
-                    </li>
-                </ul>
+        <div class="header-wrapper">
+            <div class="container flex-container">
+                <div id="logo"><img src="assets/imgs/main-logo.png" alt="TTVFood logo"></div>
+                <div id="navbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Trang chủ</a>
+                        </li>
+                        <li class="nav-item" style="position: relative;">
+                            <a href="" class="nav-link">Thể loại <i class="fas fa-angle-down"></i></a>
+                            <ul class="subnav">
+                                <li>
+                                    <a href="">Eat clean</a>
+                                </li>
+                                <li>
+                                    <a href="">Eat heathy</a>
+                                </li>
+                                <li>
+                                    <a href="">Đồ ăn nhanh</a>
+                                </li>
+                                <li>
+                                    <a href="">Đồ ăn Cao cấp</a>
+                                </li>
+                                <li>
+                                    <a href="">Đồ ăn Bình dân</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Người sáng lập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Bản đồ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-box">
+                    <form action="">
+                        <input type="search" placeholder="Search something">
+                        <span class="pre-input">
+                            <a class="fas fa-search"></a>
+                        </span>
+                    </form>
+                </div>
+                <div id="user-account">
+                    <button id="btnSignIn">Đăng nhập</button>
+                    <div id="signInModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Đăng nhập</h3>
+                                <button class="close">Thoát</button>
+                            </div>
+                            <input type="text">
+                            <input type="password">
+                            
+                            <a class="btn-submit" href="">Đăng nhập</a>
+                            <a href="">Quên mật khẩu?</a>
+                            <a href="">Đăng ký</a>
+                        </div>
+                    </div>
+                    
+                    <button id="btnSignUp">Đăng ký</button>
+                    <div id="signUpModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h3>Đăng ký</h3>
+                                <button class="close2">Thoát</button>
+                            </div>
+                            <h4>Họ tên <span>*</span></h4> 
+                            <input type="text">  
+                            <h4>Ngày sinh <span>*</span></h4> 
+                            <input type="datetime">  
+                            <h4>Số điện thoại <span>*</span></h4> 
+                            <input type="text">  
+                            <h4>Địa chỉ <span>*</span></h4> 
+                            <input type="text">  
+                            <a class="btn-submit" href="">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="search-box">
-                <form action="">
-                    <input type="search" placeholder="Search anything">
-                    <span class="pre-input">
-                        <a class="fas fa-search"></a>
-                    </span>
-                </form>
-            </div>
-            <div id="user-account">a</div>
         </div>
 
         <!-- End Header  -->
@@ -453,10 +490,10 @@
     </div>
 
     <!-- Js  -->
-    <script src="assets/js/myJs.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/myJs.js"></script>
 
 </body>
 

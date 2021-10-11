@@ -47,3 +47,12 @@ window.onclick = function (event) {
         modal2.style.display = "none";
     }
 }
+
+// menu mb 
+
+document.querySelector('.menu-mb-bar').onclick = () => {
+    document.querySelector('.menu-mb-bar').classList.toggle('fa-times');
+    document.querySelector('.navbar').classList.toggle('active');
+}
+
+

@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/phone-icon-fixed.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <title>TTV Food</title>
 </head>
@@ -30,8 +28,9 @@
                             <a href="" class="nav-link">Trang chủ</a>
                         </li>
                         <li class="nav-item" style="position: relative;">
-                            <div class="nav-link">Thể loại <i class="fas fa-angle-down"></i></div>
-                            <ul class="subnav">
+                            <div onclick="dropDownSubnav()" class="nav-link" id="btn-dropdown">Thể loại <i
+                                    class="fas fa-angle-down"></i></div>
+                            <ul class="subnav" id="myDropdown">
                                 <li>
                                     <a href="">Eat clean</a>
                                 </li>
@@ -71,7 +70,7 @@
                 <div id="user-account">
                     <!-- Form sign in  -->
                     <button id="btnSignIn">Đăng nhập</button>
-                    <div id="signInModal" class="modal ">
+                    <div id="signInModal" class="modal">
                         <div class="modal-content">
                             <div class="modal-title">
                                 <h3>Đăng nhập</h3>
@@ -87,7 +86,7 @@
                     </div>
                     <!-- Form sign up -->
                     <button id="btnSignUp">Đăng ký</button>
-                    <div id="signUpModal" class="modal">
+                    <div id="signUpModal" class="modal2">
                         <div class="modal-content">
                             <div class="modal-title">
                                 <h3>Đăng ký</h3>
@@ -115,7 +114,7 @@
         <div class="owl-carousel owl-theme slider flex-container">
             <div class="item" style="background-image: url(assets/imgs/slide/eat-clean.png);">
                 <div class="overlay">
-                    <div class="text-content">
+                    <div class="text-content wow bounceInRight" data-wow-duration="s.5" data-wow-delay="0s">
                         <h2 class="text-heading">Eat heathy</h2>
                         <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
                     </div>
@@ -123,7 +122,7 @@
             </div>
             <div class="item" style="background-image: url(assets/imgs/slide/eat-clean2.png);">
                 <div class="overlay">
-                    <div class="text-content">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="2s">
                         <h2 class="text-heading">Eat heathy</h2>
                         <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
                     </div>
@@ -131,7 +130,7 @@
             </div>
             <div class="item" style="background-image: url(assets/imgs/slide/eat-clean3.png);">
                 <div class="overlay">
-                    <div class="text-content">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="4s">
                         <h2 class="text-heading">Eat heathy</h2>
                         <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
                     </div>
@@ -139,7 +138,7 @@
             </div>
             <div class="item" style="background-image: url(assets/imgs/slide/eat-clean4.png);">
                 <div class="overlay">
-                    <div class="text-content">
+                    <div class="text-content wow bounceInRight" data-wow-duration="1.5s" data-wow-delay="6s">
                         <h2 class="text-heading">Eat heathy</h2>
                         <p class="text-description">The atmosphere in New York is lorem ipsum.</p>
                     </div>
@@ -174,14 +173,17 @@
 
         <!-- End Categories -->
 
+        <!-- Line through -->
+        <div class="line-through" ></div>
+
         <!-- Start products vinh-->
         <div class="container">
-            <div class="food-menu">
+            <div class="food-menu ">
                 <h1>Hôm nay ăn gì?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque delectus velit quaerat dolores natus
                     quae. Iusto dolor vitae suscipit id odio iure molestias natus consectetur dolores eius! Non, optio
                     ad.</p>
-                <div class="food-category">
+                <div class="food-category animate__animated animate__fadeInDown">
                     <div>
                         <button data-food-type="all" class="active">
                             All food
@@ -199,7 +201,7 @@
                     </div>
                     <div>
                         <button data-food-type="ipsum">
-                            Food for Gym
+                            Gym Food
                         </button>
                     </div>
                     <div>
@@ -209,9 +211,10 @@
                     </div>
 
                 </div>
-                <div class="food-item-wrap all">
+                <div class="food-item-wrap all ">
                     <!-- Start Eat clean section  -->
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -228,7 +231,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/8.jpg);">
@@ -244,7 +248,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -261,7 +266,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-clean-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -281,7 +287,8 @@
                     <!-- End Eat clean section  -->
 
                     <!-- Start Eat healthy section  -->
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -298,7 +305,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -315,7 +323,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/3.jpg);">
@@ -331,7 +340,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 eat-healthy-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/5.jpg);">
@@ -350,7 +360,8 @@
                     <!-- End Eat healthy section  -->
 
                     <!-- Start Food for Gym  -->
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/1.jpg);">
@@ -366,7 +377,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -383,7 +395,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/4.jpg);">
@@ -399,7 +412,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 food-for-gym-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img" style="background-image: url(./assets/imgs/foods/6.jpg);">
@@ -418,7 +432,8 @@
                     <!-- End Food for Gym  -->
 
                     <!-- Start Street food -->
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.3s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -435,7 +450,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.5s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -452,7 +468,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.7s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -469,7 +486,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type">
+                    <div class="food-item m-4 c-6 c-12 col-xs-6 street-food-type  wow bounceInDown"
+                        data-wow-duration="1.9s" data-wow-delay="1s">
                         <div class="item-wrap">
                             <div class="item-img">
                                 <div class="img-hoder bg-img"
@@ -487,60 +505,53 @@
                         </div>
                     </div>
                     <!-- Start Street food -->
-
-
                 </div>
-                <div class="food-item-wrap all"></div>
-
+                <!-- <div class="food-item-wrap all"></div> -->
             </div>
-
         </div>
-
-
         <!-- End products vinh-->
 
         <!-- Start open time -->
         <div class="open-time section ">
-
             <div class="container open-time-wrap">
                 <h2 class="title-section">Thời gian mở cửa!</h2>
                 <div class=" overflow-x">
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="1.2s" data-wow-delay="1s">
                         <ul>
                             <h4>Mon</h4>
                             <li>6h - 12h </li>
                             <li>6h - 12h </li>
                         </ul>
                     </div>
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="1.4s" data-wow-delay="1s">
                         <ul>
                             <h4>Tue</h4>
                             <li>6h - 12h </li>
                             <li>6h - 12h </li>
                         </ul>
                     </div>
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="1.6s" data-wow-delay="1s">
                         <ul>
                             <h4>Wed</h4>
                             <li>6h - 12h </li>
                             <li>6h - 12h </li>
                         </ul>
                     </div>
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="1.8s" data-wow-delay="1s">
                         <ul>
                             <h4>Thur</h4>
                             <li>6h - 12h </li>
                             <li>6h - 12h </li>
                         </ul>
                     </div>
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="2s" data-wow-delay="1s">
                         <ul>
                             <h4>Fri</h4>
                             <li>6h - 12h </li>
                             <li>6h - 12h </li>
                         </ul>
                     </div>
-                    <div class="item-time">
+                    <div class="item-time wow slideInDown" data-wow-duration="2.2s" data-wow-delay="1s">
                         <ul>
                             <h4>Sat</h4>
                             <li>6h - 12h </li>
@@ -548,17 +559,17 @@
                         </ul>
                     </div>
                 </div>
-                <h4 class="decr-section">Chúng tôi luôn sẵn sàng phục vụ quý khách tất cả các ngày trong tuần!</h4>
+                <p class="decr-section">Chúng tôi luôn sẵn sàng phục vụ quý khách tất cả các ngày trong tuần!</p>
             </div>
 
         </div>
         <!-- End open time -->
 
         <!-- Start chef -->
-        <div class="chef section animate__animated animate__s animate__delay-2s">
+        <div class="chef section animate__fadeInDown">
             <div class="container flex-container">
                 <h2 class="title-section" style="flex: 100%;">Người sáng lập TTVFood</h2>
-                <div class="item-chef">
+                <div class="item-chef wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="assets/imgs/team/item-team.png" alt="">
                     <div class="overlay-team">
                         <div>
@@ -574,7 +585,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-chef">
+                <div class="item-chef wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1s">
                     <img src="assets/imgs/team/item-team2.jpg" alt="">
                     <div class="overlay-team">
                         <div>
@@ -590,7 +601,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item-chef">
+                <div class="item-chef wow bounceInLeft" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="assets/imgs/team/item-team3.png" alt="">
                     <div class="overlay-team">
                         <div>
@@ -611,17 +622,44 @@
         </div>
         <!-- End chef -->
 
-        <!-- Start team -->
-        <div class="TTV-teams">
-
+        <!-- Start review -->
+        <div class="review section">
+            <div class="container flex-container">
+                <h2 class="title-section" style="flex: 100%;">Phản hồi</h2>
+                <div class="review-item">
+                    <h4>Cảm ơn bạn đã đóng góp ý kiến!</h4>
+                    <p class="decr-section">Những đóng góp của bạn rất hữu ích cho sự phát triển của TTVFood</p>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Tên">
+                        <input type="text" name="" id="" placeholder="Địa chỉ email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Nhập ý kiến..."></textarea>
+                    </form>
+                </div>
+                <div class="review-item">
+                    <h4>Đội ngũ nhân viên đầy tâm huyết!</h4>
+                    <img src="assets/imgs/team/nhanvien.jpg" alt="">
+                </div>
+            </div>
         </div>
-        <!-- End team -->
+        <!-- End review -->
+
+        <!-- Start map -->
+        <div class="TTV-map">
+            <div class="container">
+                <h2 class="title-section">Tới TTVFood ngay thôi!</h2>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8168144215447!2d105.73976961540247!3d21.040014492768737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1634125629957!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- End map -->
 
         <!-- Start footer  -->
         <div class="footer">
 
         </div>
         <!-- End footer  -->
+
 
         <!-- Start Phone icon fixed -->
         <div class="hotline-phone-ring-wrap">
@@ -647,9 +685,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="assets/js/myJs.js"></script>
-    <script> new WOW().init(); </script>
-
 </body>
 
 </html>

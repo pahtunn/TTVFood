@@ -13,6 +13,12 @@ Array.from(categories).forEach((item) => {
     }
 })
 
+// menu mb 
+document.querySelector('.menu-mb-bar').onclick = () => {
+    document.querySelector('.menu-mb-bar').classList.toggle('fa-times');
+    document.querySelector('.navbar').classList.toggle('active');
+}
+
 // Login modal
 // Sign im
 var modal = document.getElementById("signInModal");
@@ -48,11 +54,23 @@ window.onclick = function (event) {
     }
 }
 
-// menu mb 
 
-document.querySelector('.menu-mb-bar').onclick = () => {
-    document.querySelector('.menu-mb-bar').classList.toggle('fa-times');
-    document.querySelector('.navbar').classList.toggle('active');
-}
 
+// // Drop down toggle Subnav - Header 
+// // Close the dropdown if the user clicks outside of it
+// function dropDownSubnav() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+//   }
+// window.onclick = function(event) {
+//     if (!event.target.matches('#btn-dropdown')) {
+//       var dropdowns = document.getElementsByClassName("subnav");
+//       var i;
+//       for (i = 0; i < dropdowns.length; i++) {
+//         var openDropdown = dropdowns[i];
+//         if (openDropdown.classList.contains('show')) {
+//           openDropdown.classList.remove('show');
+//         }
+//       }
+//     }
+//   }
 

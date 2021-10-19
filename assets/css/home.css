@@ -592,20 +592,31 @@ body {
   text-align: center;
   margin: 1rem 0;
 }
-
 .review form input{
   color: var(--white);
   background-color: var(--primary-color);
   border: none;
   border-bottom: 1px solid #000;
 }
-.review textarea{
-  margin-top: 2rem;
+.review .review-item textarea{
+  /* margin-top: 2rem; */
   width: 100%;
   font-family: "font-content";
   font-size: 1.2rem;
   padding: 1rem;
   border-radius: var(--borderRadius);
+}
+
+.review .review-item button{
+  padding: 5px 30px;
+  font-size: 1.2rem;
+  font-family: "font-content";
+  border: 1px solid var(--grey);
+  border-radius: var(--borderRadiusMin);
+  
+}
+.review .review-item button:hover{
+  color: var(--primary-color);
 }
 .review ::placeholder{
   color: #000;
@@ -620,15 +631,9 @@ body {
 
 /* Start map  */
 .TTV-map{
-  /* background-color: var(--white); */
-  /* border-top: 2px solid var(--white); */
-  /* border-bottom: 2px solid var(--white); */
+
   margin-bottom: 2rem;
   box-shadow: 0 10px 10px rgba(59, 59, 59, 0.6);
-}
-.TTV-map h2{
-  /* margin-bottom: 2rem; */
-  /* color: #fff; */
 }
 .TTV-map iframe{
   margin-bottom: 2px;
@@ -636,6 +641,8 @@ body {
 }
 /* End map  */
 
+
+/* Start footer  */
 #footer {
   background-color: var(--primary-color);
   color:#fff;
@@ -682,8 +689,7 @@ body {
   color: var(--black);
   border-top: 0.5px solid #999;
 }
-
-
+/* End footer  */
 
 /* Responsive */
 @media only screen and (max-width: 1140px) {
@@ -728,7 +734,7 @@ body {
  
 
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   /* vinh responsive */
   #navbar {
     position: absolute;
@@ -772,10 +778,6 @@ body {
 
   .food-category {
     overflow-x: auto;
-  }
-
-  .menu-food {
-    padding: 2rem;
   }
 
   .m-4 {

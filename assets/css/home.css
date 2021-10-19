@@ -657,7 +657,6 @@ body {
   transition: 0.1s;
   padding: 2rem 9%;
 }
-
 .footer-item h3 {
   color: var(--black);
   font-size: 2rem;
@@ -672,15 +671,19 @@ body {
   cursor: pointer;
 }
 
-.footer-item i span {
+.footer-item i a {
+  text-decoration: none;
   padding-left: 0.5rem;
   font-weight: 400;
   transition: .15s linear;
+  font-family: "Font-content";
+  color: #fff;
 }
 
-.footer-item i span:hover {
-  padding-left: 1rem;
-  color: #efecd6;
+.footer-item i a:hover {
+  /* padding-left: 1rem; */
+  color: #000;
+  text-decoration: underline;
 }
 #footer .copyright {
   padding: 1.5rem 0 3rem 0;

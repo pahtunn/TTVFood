@@ -25,37 +25,37 @@
                 <div id="navbar" class="navbar">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Trang chủ</a>
+                            <a href="#" class="nav-link">Trang chủ</a>
                         </li>
                         <li class="nav-item" style="position: relative;">
                             <div onclick="dropDownSubnav()" class="nav-link" id="btn-dropdown">Thể loại <i
                                     class="fas fa-angle-down"></i></div>
                             <ul class="subnav" id="myDropdown">
                                 <li>
-                                    <a href="">Eat clean</a>
+                                    <a href="#product">Eat clean</a>
                                 </li>
                                 <li>
-                                    <a href="">Eat heathy</a>
+                                    <a href="#product">Eat heathy</a>
                                 </li>
                                 <li>
-                                    <a href="">Đồ ăn nhanh</a>
+                                    <a href="#product">Đồ ăn nhanh</a>
                                 </li>
                                 <li>
-                                    <a href="">Đồ ăn Cao cấp</a>
+                                    <a href="#product">Đồ ăn Cao cấp</a>
                                 </li>
                                 <li>
-                                    <a href="">Đồ ăn Bình dân</a>
+                                    <a href="#product">Đồ ăn Bình dân</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Người sáng lập</a>
+                            <a href="#member" class="nav-link">Người sáng lập</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Liên hệ</a>
+                            <a href="#contact" class="nav-link">Liên hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Bản đồ</a>
+                            <a href="#map" class="nav-link">Bản đồ</a>
                         </li>
                     </ul>
                 </div>
@@ -149,7 +149,7 @@
         <!-- End slider -->
 
         <!-- Start Categories -->
-        <div class="categories-food section ">
+        <div class="categories-food section " >
             <div class="container">
                 <div class="cate-items flex-container">
                     <div class="item">
@@ -177,7 +177,7 @@
         <div class="line-through" ></div>
 
         <!-- Start products vinh-->
-        <div class="container">
+        <div class="container" id="product">
             <div class="food-menu ">
                 <h1>Hôm nay ăn gì?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque delectus velit quaerat dolores natus
@@ -566,7 +566,7 @@
         <!-- End open time -->
 
         <!-- Start chef -->
-        <div class="chef section animate__fadeInDown">
+        <div class="chef section animate__fadeInDown" id="member">
             <div class="container flex-container">
                 <h2 class="title-section" style="flex: 100%;">Người sáng lập TTVFood</h2>
                 <div class="item-chef wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">
@@ -623,7 +623,7 @@
         <!-- End chef -->
 
         <!-- Start review -->
-        <div class="review section">
+        <div class="review section" id="contact">
             <div class="container flex-container">
                 <h2 class="title-section" style="flex: 100%;">Phản hồi</h2>
                 <div class="review-item">
@@ -644,7 +644,7 @@
         <!-- End review -->
 
         <!-- Start map -->
-        <div class="TTV-map">
+        <div class="TTV-map" id="map">
             <div class="container">
                 <h2 class="title-section">Tới TTVFood ngay thôi!</h2>
             </div>
@@ -680,6 +680,49 @@
         </div>
         <!-- End Phone icon fixed -->
     </div>
+
+     <!-- section footer start-->
+     <section id="footer">
+        <div class="footer">
+            <div class="footer-item">
+                <h3>our branches</h3>
+                <i class="fas fa-map-marker-alt"><span>viet nam</span></i>
+                <i class="fas fa-map-marker-alt"><span>thai binh</span></i>
+                <i class="fas fa-map-marker-alt"><span>nam dinh</span></i>
+                <i class="fas fa-map-marker-alt"><span>nghe an</span></i>
+                <i class="fas fa-map-marker-alt"><span>ha noi</span></i>
+            </div>
+            <div class="footer-item">
+                <h3>quick licks</h3>
+                <i class="fas fa-arrow-right"><span>trang chủ</span></i>
+                <i class="fas fa-arrow-right"><span>thể loại</span></i>
+                <i class="fas fa-arrow-right"><span>người sáng lập</span></i>
+                <i class="fas fa-arrow-right"><span>liên hệ</span></i>
+                <i class="fas fa-arrow-right"><span>bản đồ </span></i>
+            </div>
+            <div class="footer-item">
+                <h3>contact info</h3>
+                <i class="fas fa-phone"><span>123-456-789</span></i>
+                <i class="fas fa-phone"><span>111-222-333</span></i>
+                <i class="fas fa-envelope"><span>TTVFood@gmail.com</span></i>
+                <i class="fas fa-map-marker-alt"><span>ha noi - viet nam</span></i>
+
+            </div>
+            <div class="footer-item">
+                <h3>our branches</h3>
+                <i class="fab fa-facebook-f"><span>TTVFood</span></i>
+                <i class="fab fa-twitter"><span>TTVFood</span></i>
+                <i class="fab fa-instagram-square"><span>instargram</span></i>
+                <i class="fab fa-linkedin"><span>linkedin</span></i>
+                <i class="fab fa-pinterest"><span>pinterest</span></i>
+            </div>
+        </div>
+        <div class="copyright">create by TTVFood design | all right reserved</div>
+    </section>
+    <!-- section footer end-->
+
+
+
 
     <!-- Js  -->
     <script src="assets/js/jquery.min.js"></script>

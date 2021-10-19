@@ -636,6 +636,53 @@ body {
 }
 /* End map  */
 
+#footer {
+  background-color: var(--primary-color);
+  color:#fff;
+  text-transform: capitalize;
+  font-family: "Font-content";
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  transition: 0.1s;
+  padding: 2rem 9%;
+}
+
+.footer-item h3 {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footer-item i {
+  color: var(--black);
+  font-size: 1.2rem;
+  display: block;
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+
+.footer-item i span {
+  padding-left: 0.5rem;
+  font-weight: 400;
+  transition: .15s linear;
+}
+
+.footer-item i span:hover {
+  padding-left: 1rem;
+  color: #efecd6;
+}
+#footer .copyright {
+  padding: 1.5rem 0 3rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--black);
+  border-top: 0.5px solid #999;
+}
+
 
 
 /* Responsive */
@@ -681,7 +728,7 @@ body {
  
 
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
   /* vinh responsive */
   #navbar {
     position: absolute;
@@ -725,6 +772,10 @@ body {
 
   .food-category {
     overflow-x: auto;
+  }
+
+  .menu-food {
+    padding: 2rem;
   }
 
   .m-4 {

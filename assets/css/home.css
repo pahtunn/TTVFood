@@ -28,6 +28,9 @@ body {
 }
 
 /* root */
+.wrapper{
+  position: relative;
+}
 .container {
   width: 100%;
   max-width: 1366px;
@@ -628,6 +631,30 @@ body {
 }
 
 /* End review */
+/* Start btn Back top top  */
+.back-top #btn-back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 99;
+  /* width: 30px;
+  height: 30px; */
+  background-color: #fff;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.back-top #btn-back-to-top i{
+  color: var(--primary-color);
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+  
+.back-top #btn-back-to-top:hover {
+  background-color: #f1f1f1;
+}
+/* End btn Back top top  */
 
 /* Start map  */
 .TTV-map{
